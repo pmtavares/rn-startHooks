@@ -6,7 +6,7 @@ const ComponentScreen = () =>
     const name = 'Pedro'
     return(
         <View>
-            <Text style={styles.textStyle}>Getting started</Text>
+            <Text style={styles.textStyle}>Getting started wit components</Text>
             <Text style={styles.subHeaderStyle}>My name is {name}</Text>
         </View>
     );
