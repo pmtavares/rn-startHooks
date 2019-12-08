@@ -9,6 +9,7 @@ const HomeScreen = ({navigation}) => {
       <Button title="Components Demo" 
         onPress={() => {navigation.navigate('Components')}} style={styles.buttonStyle} />
       <Button title="List Demo" onPress={() => {navigation.navigate('List')}} />
+      <Button title="Image Demo" onPress={() => {navigation.navigate('Image')}} />
 
     </View>
   );
@@ -19,7 +20,8 @@ const styles = StyleSheet.create({
     fontSize: 30
   },
   buttonStyle:{
-    marginBottom: 10
+    marginBottom: 10,
+    marginTop: 5
   }
 });
 
