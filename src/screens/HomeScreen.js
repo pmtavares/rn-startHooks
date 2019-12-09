@@ -5,11 +5,22 @@ const HomeScreen = ({navigation}) => {
 
   return (
     <View>
-      <Text style={styles.text}>HomeScreen test</Text>
-      <Button title="Components Demo" 
-        onPress={() => {navigation.navigate('Components')}} style={styles.buttonStyle} />
-      <Button title="List Demo" onPress={() => {navigation.navigate('List')}} />
-      <Button title="Image Demo" onPress={() => {navigation.navigate('Image')}} />
+      <Text style={styles.text}>HomeScreen test</Text>     
+      <TouchableOpacity style={styles.buttonStyle}>
+        <Button title="Components Demo" onPress={() => {navigation.navigate('Components')}}  />    
+      </TouchableOpacity>   
+      
+      <TouchableOpacity style={styles.buttonStyle} >
+        <Button title="List Demo" onPress={() => {navigation.navigate('List')}} />
+      </TouchableOpacity>
+      
+
+        <TouchableOpacity style={styles.buttonStyle}>
+          <Button title="Image Demo" onPress ={() => {navigation.navigate('Image')}}  />
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.buttonStyle} >
+          <Button title="Go to counter" onPress={() => {navigation.navigate('Counter')}} />
+        </TouchableOpacity>
 
     </View>
   );
@@ -21,7 +32,8 @@ const styles = StyleSheet.create({
   },
   buttonStyle:{
     marginBottom: 10,
-    marginTop: 5
+    marginTop: 5,
+    width: '80%'
   }
 });
 
