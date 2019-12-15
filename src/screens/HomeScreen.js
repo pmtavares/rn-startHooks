@@ -27,6 +27,9 @@ const HomeScreen = ({navigation}) => {
         <TouchableOpacity style={styles.buttonStyle} >
           <Button title="Go to Square" onPress={() => {navigation.navigate('Square')}} />
         </TouchableOpacity>
+        <TouchableOpacity style={styles.buttonStyle} >
+        <Button title="Go to Square Reducer" onPress={() => {navigation.navigate('SquareRed')}} />
+      </TouchableOpacity>
 
     </View>
   );

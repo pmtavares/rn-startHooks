@@ -27,7 +27,7 @@ const SquareScreen = () =>
         }
         if(color ==='Green')
         {
-            if(blue + change >=0 && blue + change <= 255)
+            if(green + change >=0 && green + change <= 255)
             {
                 setGreen(green + change);
             }
