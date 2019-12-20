@@ -28,11 +28,11 @@ const HomeScreen = ({navigation}) => {
           <Button title="Go to Square" onPress={() => {navigation.navigate('Square')}} />
         </TouchableOpacity>
         <TouchableOpacity style={styles.buttonStyle} >
-        <Button title="Go to Square Reducer" onPress={() => {navigation.navigate('SquareRed')}} />
+          <Button title="Go to Square Reducer" onPress={() => {navigation.navigate('SquareRed')}} />
         </TouchableOpacity>
         <TouchableOpacity style={styles.buttonStyle} >
-        <Button title="Go to Text Screen" onPress={() => {navigation.navigate('TextScreen')}} />
-      </TouchableOpacity>
+          <Button title="Go to Text Screen" onPress={() => {navigation.navigate('TextInput')}} />
+        </TouchableOpacity>
 
     </View>
   );
